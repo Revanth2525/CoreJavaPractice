@@ -31,12 +31,10 @@ public class Task1 {
                     break;
             }
             System.out.print("Do you want to continue? Yes[Y/y]:");
-            char ch = sc.next().charAt(0);
-            if (ch != 'Y' && ch != 'y') {
-                break;
+            String ch = sc.next();
+            if (!ch.equalsIgnoreCase("y")) break;
             }
         }
-    }
 
     static void getData() {
         System.out.println("┌───────────┬─────────────┐");
